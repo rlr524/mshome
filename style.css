@@ -57,14 +57,9 @@ ul {
   padding-bottom: 2px;
 }
 
-.main-nav ul li a:hover {
+.main-nav ul li a:hover .nav-icon {
   border-bottom: 2px solid var(--nero-color);
 }
-
-/* todo determine how to remove hover border from search and cart icons */
-/* .main-nav i:hover {
-  border-bottom: none;
-} */
 
 .main-nav ul.main-menu {
   flex: 1;
@@ -90,10 +85,19 @@ ul {
   opacity: 0.9;
 }
 
+.dark {
+  color: #fff;
+}
+
+.dark .btn {
+  background: #f4f4f4;
+  color: var(--nero-color);
+}
+
 /* showcase */
 .showcase {
   width: 100%;
-  height: 400px;
+  height: 25rem;
   background: url("./img/showcase.png") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
@@ -118,6 +122,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.25rem;
+  margin-bottom: 2.5rem;
 }
 
 .home-cards img {
@@ -139,4 +144,62 @@ ul {
 
 .home-cards a:hover {
   border-bottom: 2px solid #0067b8;
+}
+
+.home-cards a:hover i {
+  margin-left: 0.625rem;
+}
+
+/* xbox */
+.xbox {
+  width: 100%;
+  height: 21.875rem;
+  background: url("img/xbox.png") no-repeat center center/cover;
+  margin-bottom: 2rem;
+}
+
+.xbox .content {
+  width: 40%;
+  padding: 3.125rem 0 0 1.875rem;
+}
+
+.xbox p,
+.carbon p {
+  margin: 0.625rem 0 1.25rem;
+}
+
+/* cards 2 */
+.for-work {
+  margin-bottom: 0.625rem;
+}
+
+/* carbon */
+.carbon {
+  width: 100%;
+  height: 21.875rem;
+  background: url("img/carbon.png") no-repeat center center/cover;
+  margin-bottom: 2rem;
+}
+
+.carbon .content {
+  width: 55%;
+  padding: 6rem 0 0 1.875rem;
+}
+
+/* follow */
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.875rem 0 1.875rem;
+}
+
+.follow img {
+  width: 1.6875rem;
+}
+
+.follow * {
+  font-size: 0.875rem;
+  color: grey;
+  margin-right: 0.625rem;
 }
