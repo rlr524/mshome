@@ -61,10 +61,6 @@ ul {
   border-bottom: 2px solid var(--nero-color);
 }
 
-.main-nav ul li a:hover .nav-icon {
-  border-bottom: 0;
-}
-
 .main-nav ul.main-menu {
   flex: 1;
   margin-left: 1.25rem;
