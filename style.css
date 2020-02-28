@@ -57,8 +57,12 @@ ul {
   padding-bottom: 2px;
 }
 
-.main-nav ul li a:hover .nav-icon {
+.main-nav ul li a:hover {
   border-bottom: 2px solid var(--nero-color);
+}
+
+.main-nav ul li a:hover .nav-icon {
+  border-bottom: 0;
 }
 
 .main-nav ul.main-menu {
